@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <HeadLand />
-      <div className="flex justify-center">
+      <div className="flex justify-center absolute top-20">
         <Carousel
           opts={{
             align: "start",

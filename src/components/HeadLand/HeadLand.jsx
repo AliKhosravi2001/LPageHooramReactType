@@ -33,7 +33,7 @@ const HeadLand = () => {
     window.location.href = "login";
   };
   return (
-    <nav className=" flex justify-center  w-100 h-20 bg-[#F3D012] static ">
+    <nav className=" flex justify-center  w-full h-20 bg-[#F3D012] fixed z-50 ">
       <div className="grow flex  items-center gap-4 mx-2  my-2 w-96 ">
         <div className=" block xl:hidden">
           <Sheet>
