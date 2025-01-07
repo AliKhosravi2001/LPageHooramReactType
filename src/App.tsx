@@ -14,7 +14,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import Button from "@/components/button/Button";
+import { Button } from "@/components/ui/button";
 import logohooram from "@/assets/horam.jpg";
 import texthooram from "@/assets/Hooram.png";
 import "@/assets/fontawesome-free-6.5.2-web/css/all.css";
@@ -36,18 +36,8 @@ import {
 } from "@/components/ui/dialog";
 
 function App() {
-  const linkchin = () => {
-    window.location.href = "china.store";
-  };
-  const linkemarat = () => {
-    window.location.href = "UAE.store";
-  };
-  const linkturkie = () => {
-    window.location.href = "turkish.store";
-  };
   return (
     <>
-      {/* <HeadLand /> */}
       <nav className=" flex justify-center  w-full h-20 bg-[#F3D012] fixed z-50 ">
         <div className="grow flex  items-center gap-4 mx-2  my-2 w-96 ">
           <div className=" block xl:hidden">
@@ -61,7 +51,7 @@ function App() {
                   <SheetDescription>
                     <Dialog>
                       <DialogTrigger>
-                        <Button text="ورود / ثبت نام" />
+                        <Button>ورود / ثبت نام</Button>
                       </DialogTrigger>
                       <DialogContent>
                         <DialogHeader>
@@ -76,22 +66,34 @@ function App() {
                         </DialogHeader>
                       </DialogContent>
                     </Dialog>
-                    <Button text="خرید از چین" link={linkchin} />
-                    <Button text="خرید از امارات" link={linkemarat} />
-                    <Button text="خرید از ترکیه" link={linkturkie} />
+                    <Button>
+                      <a href="china.store">خرید از چین</a>
+                    </Button>
+                    <Button>
+                      <a href="UAE.store">خرید از امارات</a>
+                    </Button>
+                    <Button>
+                      <a href="turkish.store">خرید از ترکیه</a>
+                    </Button>
                   </SheetDescription>
                 </SheetHeader>
               </SheetContent>
             </Sheet>
           </div>
           <div className="min-h-12 min-w-32  hidden xl:block">
-            <Button text="خرید از چین" link={linkchin} />
+            <Button>
+              <a href="china.store">خرید از چین</a>
+            </Button>
           </div>
           <div className="min-h-12 min-w-32  hidden xl:block">
-            <Button text="خرید از امارات" link={linkemarat} />
+            <Button>
+              <a href="UAE.store">خرید از امارات</a>
+            </Button>
           </div>
           <div className="min-h-12 min-w-32  hidden xl:block">
-            <Button text="خرید از ترکیه" link={linkturkie} />
+            <Button>
+              <a href="turkish.store">خرید از ترکیه</a>
+            </Button>
           </div>
         </div>
         <a
@@ -116,7 +118,7 @@ function App() {
           <div className=" min-h-12 min-w-32 hidden xl:block">
             <Dialog>
               <DialogTrigger>
-                <Button text="ورود / ثبت نام" />
+                <Button>ورود / ثبت نام</Button>
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
@@ -152,47 +154,96 @@ function App() {
                 <img
                   src={alibaba}
                   alt="خرید از علی بابا"
-                  className="pointer-events-none"
+                  className="pointer-events-none brightness-50"
                 />
-                <a href="" className="absolute inset-0">
-                  خرید از چین
-                </a>
+                <div className="absolute top-0 flex justify-center items-center w-full h-full">
+                  <a href="">
+                    <h1 className=" text-center text-white md:text-6xl sm:text-5xl text-2xl">
+                      خرید از چین
+                    </h1>
+                  </a>
+                </div>
               </div>
             </CarouselItem>
             <CarouselItem>
-              <img
-                src={Foreign_currency_payment}
-                alt="پرداخت ارزی"
-                className="pointer-events-none"
-              />
+              <div className="relative">
+                <img
+                  src={Foreign_currency_payment}
+                  alt="پرداخت ارزی"
+                  className="pointer-events-none brightness-50"
+                />
+                <div className="absolute top-0 flex justify-center items-center w-full h-full">
+                  <a href="">
+                    <h1 className=" text-center text-white md:text-6xl sm:text-5xl text-2xl">
+                      پرداخت ارزی
+                    </h1>
+                  </a>
+                </div>
+              </div>
             </CarouselItem>
             <CarouselItem>
-              <img
-                src={International_shipping}
-                alt="حمل و نقل بین المللی"
-                className="pointer-events-none"
-              />
+              <div className="relative">
+                <img
+                  src={International_shipping}
+                  alt="حمل و نقل بین المللی"
+                  className="pointer-events-none brightness-50"
+                />
+                <div className="absolute top-0 flex justify-center items-center w-full h-full">
+                  <a href="">
+                    <h1 className=" text-center text-white md:text-6xl sm:text-5xl text-2xl">
+                      حمل و نقل بین المللی
+                    </h1>
+                  </a>
+                </div>
+              </div>
             </CarouselItem>
             <CarouselItem>
-              <img
-                src={Türkiye}
-                alt="خرید از ترکیه"
-                className="pointer-events-none"
-              />
+              <div className="relative">
+                <img
+                  src={Türkiye}
+                  alt="خرید از ترکیه"
+                  className="pointer-events-none brightness-50"
+                />
+                <div className="absolute top-0 flex justify-center items-center w-full h-full">
+                  <a href="">
+                    <h1 className=" text-center text-white md:text-6xl sm:text-5xl text-2xl">
+                      خرید از ترکیه
+                    </h1>
+                  </a>
+                </div>
+              </div>
             </CarouselItem>
             <CarouselItem>
-              <img
-                src={UAE}
-                alt="خرید از امارات"
-                className="pointer-events-none"
-              />
+              <div className="relative">
+                <img
+                  src={UAE}
+                  alt="خرید از امارات"
+                  className="pointer-events-none brightness-50"
+                />
+                <div className="absolute top-0 flex justify-center items-center w-full h-full">
+                  <a href="">
+                    <h1 className=" text-center text-white md:text-6xl sm:text-5xl text-2xl">
+                      خرید از امارات
+                    </h1>
+                  </a>
+                </div>
+              </div>
             </CarouselItem>
             <CarouselItem>
-              <img
-                src={Wholesale_and_single_purchase}
-                alt="خرید عمده و خرید تک"
-                className="pointer-events-none"
-              />
+              <div className="relative">
+                <img
+                  src={Wholesale_and_single_purchase}
+                  alt="خرید عمده و خرید تک"
+                  className="pointer-events-none brightness-50"
+                />
+                <div className="absolute top-0 flex justify-center items-center w-full h-full">
+                  <a href="">
+                    <h1 className=" text-center text-white md:text-6xl sm:text-5xl text-2xl">
+                      خرید عمده و خرید تک
+                    </h1>
+                  </a>
+                </div>
+              </div>
             </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
