@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Estedad";
+  src: url("./assets/Estedad-font/Estedad.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-estedad {
+  font-family: Estedad;
+}
