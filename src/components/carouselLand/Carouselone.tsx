@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/carousel";
 export default function Carouselone() {
   return (
-    <div className="flex justify-center absolute top-20">
+    <div className="flex justify-center static">
       <Carousel
         opts={{
           align: "start",
