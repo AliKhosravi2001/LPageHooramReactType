@@ -1,119 +1,29 @@
 import "./App.css";
 import Carouselone from "./components/carouselLand/Carouselone";
 import "@/assets/fontawesome-free-6.5.2-web/css/all.css";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import HeadLand from "./components/HeadLand/HeadLand";
-
+import Section1 from "./components/sectionsLand/Section1";
+import ProductPage from "./components/Product page/product";
+const productData = {
+  id: "123",
+  title:
+    "SY830 Wired stereo headphone noise cancelling gamer headset led gaming headphone with mic for PC headset game ps45 switch xbox",
+  description:
+    "SY830 هدفون استریو سیمی حذف نویز هدست گیمر هدفون led گیمر با میکروفون برای بازی هدست کامپیوتر سوئیچ ps45 xbox",
+  price: 4,
+  pricetotal: 340000,
+  weight: 1,
+  imageUrl:
+    "https://s.alicdn.com/@sc04/kf/S496e23c4e48547b0a7e8a4806b52e900F.jpg_720x720q50.jpg",
+};
 function App() {
   return (
     <>
       <div className="font-estedad">
         <HeadLand />
         <Carouselone />
-        <div className="flex items-center py-4">
-          <div className="w-full h-0 mx-8 border border-black"></div>
-          <h3 className="text-xl sm:text-2xl">خدمات</h3>
-          <div className="w-full h-0 mx-8 border border-black"></div>
-        </div>
-        <div className="w-full flex flex-col items-center mt-3 gap-3">
-          <div className="w-full flex flex-col justify-center items-center md:flex-row gap-3">
-            <Card className="md:w-[40%] w-[90%]">
-              <CardHeader>
-                <CardTitle className="text-xl sm:text:2xl">
-                  خرید از چین
-                </CardTitle>
-                <CardDescription>Card Description</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p>Card Content</p>
-              </CardContent>
-              <CardFooter>
-                <p>Card Footer</p>
-              </CardFooter>
-            </Card>
-            <Card className="md:w-[40%] w-[90%]">
-              <CardHeader>
-                <CardTitle className="text-xl sm:text:2xl">
-                  پرداخت ارزی
-                </CardTitle>
-                <CardDescription>Card Description</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p>Card Content</p>
-              </CardContent>
-              <CardFooter>
-                <p>Card Footer</p>
-              </CardFooter>
-            </Card>
-          </div>
-          <div className="w-full flex flex-col justify-center items-center md:flex-row gap-3">
-            <Card className="md:w-[40%] w-[90%]">
-              <CardHeader>
-                <CardTitle className="text-xl sm:text:2xl">
-                  حمل و نقل بین المللی
-                </CardTitle>
-                <CardDescription>Card Description</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p>Card Content</p>
-              </CardContent>
-              <CardFooter>
-                <p>Card Footer</p>
-              </CardFooter>
-            </Card>
-            <Card className="md:w-[40%] w-[90%]">
-              <CardHeader>
-                <CardTitle className="text-xl sm:text:2xl">
-                  خرید از ترکیه
-                </CardTitle>
-                <CardDescription>Card Description</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p>Card Content</p>
-              </CardContent>
-              <CardFooter>
-                <p>Card Footer</p>
-              </CardFooter>
-            </Card>
-          </div>
-          <div className="w-full flex flex-col justify-center items-center md:flex-row gap-3">
-            <Card className="md:w-[40%] w-[90%]">
-              <CardHeader>
-                <CardTitle className="text-xl sm:text:2xl">
-                  خرید از امارات
-                </CardTitle>
-                <CardDescription>Card Description</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p>Card Content</p>
-              </CardContent>
-              <CardFooter>
-                <p>Card Footer</p>
-              </CardFooter>
-            </Card>
-            <Card className="md:w-[40%] w-[90%]">
-              <CardHeader>
-                <CardTitle className="text-xl sm:text:2xl">
-                  خرید عمده و خرید تک
-                </CardTitle>
-                <CardDescription>Card Description</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p>Card Content</p>
-              </CardContent>
-              <CardFooter>
-                <p>Card Footer</p>
-              </CardFooter>
-            </Card>
-          </div>
-        </div>
+        <Section1 />
+        <ProductPage {...productData} />
       </div>
     </>
   );
