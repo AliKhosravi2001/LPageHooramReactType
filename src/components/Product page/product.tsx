@@ -18,7 +18,6 @@ interface ProductProps {
   imageUrl: string;
 }
 const ProductPage: React.FC<ProductProps> = ({
-  id,
   title,
   description,
   price,
