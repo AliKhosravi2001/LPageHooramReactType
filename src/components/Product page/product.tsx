@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "../ui/button";
 interface ProductProps {
-  id: string;
   title: string;
   description: string;
   price: number;

@@ -5,7 +5,6 @@ import HeadLand from "./components/HeadLand/HeadLand";
 import Section1 from "./components/sectionsLand/Section1";
 import ProductPage from "./components/Product page/product";
 const productData = {
-  id: "123",
   title:
     "SY830 Wired stereo headphone noise cancelling gamer headset led gaming headphone with mic for PC headset game ps45 switch xbox",
   description:
