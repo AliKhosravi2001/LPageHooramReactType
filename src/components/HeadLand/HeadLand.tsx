@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import logohooram from "@/assets/horam.png";
-import texthooram from "@/assets/Hooram.png";
+import texthooram from "@/assets/hooram.png";
 
 import "@/assets/fontawesome-free-6.5.2-web/css/all.css";
 import {
